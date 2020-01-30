@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Three To-Do's A Day</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./resources/images/favicon.png" />
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <h1 class="heading container">Three To-Do's A Day</h1>
+    </header>
+
+    <section class="intro container">
+
+      <span>
+        Having three primary things to strive for each day in pursuit of a bigger goal is much more helpful and effective than having a never-ending to-do list day after day. <br><br>
+
+        Be mindful. Choose only three main priorities today.<br>
+      </span>
+    </section>
+
+    <!--Form and list section-->
+    <section>
+      <h2 class="heading container">Today's List:</h2>
+
+      <form class='js-form container'> 
+        <input type="text" id="input" placeholder="Enter an item">
+        <button type="submit" id ="add">Add item to list</button> 
+      </form>
+  
+      <ul id="to-do-list" class="to-do-list container"></ul>
+  
+      <div class="empty-state container">
+        <span>+ It doesn't look like you've added any items yet. Go ahead and enter your first item into the box above.</span>
+      </div>
+  
+      <button id="clear-all">Clear all items</button>
+    </section>
+
+    
+
+    <!--End of form and list section-->
+
+
+    <footer>
+
+      <span>Crafted & developed by <a href="https://alexlsalt.github.io/" target="_blank">Alex Morton</a> | Background image courtesy of <a href="https://unsplash.com/@ttrapani" target="_blank">Todd Trapani via Unsplash</a></span>
+    </footer>
+    
+    <script src="./index.js" async defer></script>
+  </body>
+</html>
+
