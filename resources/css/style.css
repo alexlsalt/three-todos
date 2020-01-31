@@ -67,6 +67,7 @@ form {
 
 button {
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: lightsalmon;
 }
 
 button:hover {
