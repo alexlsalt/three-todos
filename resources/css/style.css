@@ -126,6 +126,7 @@ li {
   border-bottom: 3px solid white;
 }
 
+
 .empty-state {
   font-size: 1.2rem;
   font-family: 'Noto Sans JP', sans-serif;
@@ -168,4 +169,26 @@ footer {
   .intro, h2 {
     display: none;
   }
+}
+
+/*LIST ITEM CHECKBOX*/
+
+.styled-box input[type="checkbox"],
+.styled-box .checked {
+  display: none;
+}
+
+.styled-box input[type="checkbox"]:checked ~ .checked{
+  display: inline-block;
+  color: lightgreen;
+}
+
+.styled-box input[type="checkbox"]:checked ~ .unchecked{
+  display: none;
+}
+
+.styled-box .unchecked:hover {
+  color: lightgreen;
+  cursor: pointer;
+  
 }

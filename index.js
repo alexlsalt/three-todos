@@ -1,4 +1,4 @@
-let toDoItems = [];
+let toDoItems = []; 
 const list = document.querySelector('#to-do-list');
 
 // Add an item to the toDoItems array
@@ -22,8 +22,12 @@ function addToDo(text) {
   } // User cannot enter more than three items to the list
 
   list.insertAdjacentHTML('beforeend', `
-    <li class="todo-item" data-key="${todo.id}">
-      <input id="${todo.id}" type="checkbox" />
+    <li class="todo-item">
+      <label class="styled-box">
+        <input type="checkbox" class="tick" />
+        <i class="far fa-circle unchecked"></i>
+        <i class="fas fa-check-circle checked"></i>
+      </label>
       <span>${todo.text}</span>
     </li>
   `);
